@@ -1,0 +1,39 @@
+.wall {
+    height: 93vh;
+    width: 100%;
+}
+
+.wall div {
+    display: flex;
+    height: inherit;
+    width: inherit;
+}
+
+.wall div{
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-position-y: 95%;
+    zoom: 120%;
+    /* background-size: cover; */
+    background-image: url('https://i.pinimg.com/originals/9f/b1/25/9fb125f1fedc8cc62ab5b20699ebd87d.gif');
+    /* background-image: url('https://m.gifmania.com/Gif-Animados-Paisajes/Imagenes-Climatologia/Lluvia/Gotas-Lluvia-67011.gif'); */
+}
+
+.wall div::after{
+    content:"";
+    height: inherit;
+    width: inherit;
+    opacity: 0.5;
+    position: absolute;
+    background: linear-gradient(5deg, rgb(8, 131, 133) 0%, rgba(253,187,45,1) 100%);
+    z-index: -1;
+}
+
+.wall div::before{
+    content:"PokePage";
+    color: darkred;
+    opacity: 0.6;
+    font-size: 11rem;
+    width: 100%;
+    text-align: center;
+}
